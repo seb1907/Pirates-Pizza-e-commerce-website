@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    
+    font-family: sans-serif;
+}
+.header1{
+    
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(245, 169, 107);
+    opacity: 0.8;
+
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+.inner_header{
+    padding-top: 2vh;
+    display: flex;
+}
+.login{
+    padding-right: 10vw;    
+}
+.login:hover{
+     cursor: pointer;
+     transform: scale(1.2);
+     transition-duration: 0.5s;
+}
+.logo{
+    padding-left: 10vw;
+}
+.logo:hover{
+    cursor: none;
+}
+.main{
+    display: flex;
+    justify-content:space-between
+}
+.menu{
+    width: 75vw;
+    height: 310vh;
+
+    background-color: rgb(230, 230, 230);
+    border-right: solid rgb(177, 177, 177) 0.5px;
+}
+.cart{
+    width:25vw;
+    height: auto;
+
+    background-color: rgb(255, 255, 255);
+}
+.categories{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 3vh;
+    position: sticky;
+    top: 7vh;
+    background-color: rgb(230, 230, 230);
+    width: 75vw;
+    height: 3vh;
+    opacity: 0.9;
+    border-bottom: solid rgb(177, 177, 177) 0.5px;
+ 
+}
+.table{
+    padding-left: 2vw;
+    padding-top: 2vw;
+}
+.table:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+   
+
+
+/* css for pizza html */
+.item-bg{
+    font-family: Arial, Helvetica, sans-serif;
+ 
+    /* position: relative; */
+
+    height: 10vh;
+    width: 70vw;
+    background-color: rgb(224, 197, 156);
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+
+    border-radius: 5px;
+}
+.meat{
+    /* position: absolute; */
+    display: flex;
+    padding-top: 1vh;
+    padding-left: 0.5vw;
+    
+}
+.size{
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+.prices{
+    padding-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+.ingredients{
+    padding-top: 1vh;
+    padding-left: 1vw;
+    color: rgb(95, 95, 95);
+    font-size: .80em;
+}
+.addcart{
+    padding-top: 1vh;
+}
+.all{
+    padding-left: 1vw;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+.pizza-name{
+    padding-left: 1vw;
+}
+.addcart{
+    padding-top: 1vh;
+    width: 10vw;
+    height: 2.2vh;
+    background-color:  rgb(182, 82, 0);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.addcart:hover{
+    opacity: 0.5;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
