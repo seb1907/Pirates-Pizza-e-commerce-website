@@ -1,0 +1,546 @@
+
+{% extends 'homePage.html' %}
+
+{% block content %}
+<div class='all'>
+<div class="item-bg">
+    <div> 
+        <div class='pizza-name'>SWASHBUCKLER SUPREME</div>
+        <div class='ingredients'>Onions, Mushrooms, Mozzarella, Tomatoes, Greenpeppers, Olives, Pineapple</div>
+        <div class='meat'>
+            <div ><input class='checkbox1' name='check'type='checkbox' onclick="onlyOne(this)">Chicken</div>
+            <div ><input class='checkbox1' name='check'type='checkbox' onclick="onlyOne(this)">Ham</div>
+            <div ><input class='checkbox1' name='check'type='checkbox' onclick="onlyOne(this)">Tuna</div>
+        </div>
+    </div>
+    <div>
+        <div class='size'>
+            <div><input type='checkbox'>Mini </div>
+            <div><input type='checkbox'>Regular </div>
+            <div><input type='checkbox'>Family </div>
+        </div>
+        <div class='prices'>
+            <div>Rs200</div>
+            <div>Rs380</div>
+            <div>Rs570</div>
+        </div>
+        <div class='addcart'>Add to cart
+        </div>
+    </div>
+</div>
+</div>
+
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>ITALIAN GALLEON</div>
+            <div class='ingredients'>Onions, Mushrooms, Mozzarella, Tomatoes, Greenpeppers, Olives</div>
+            <div class='meat'>
+                <div><input type='checkbox'>Chicken</div>
+                <div><input type='checkbox'>Ham</div>
+                <div><input type='checkbox'>Tuna</div>
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs190</div>
+                <div>Rs370</div>
+                <div>Rs555</div>
+            </div>
+            <div class='addcart'> Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>HAWAIIN SUNRISE</div>
+            <div class='ingredients'> Mozzarella, Pineapple</div>
+            <div class='meat'>
+                <div><input type='checkbox'>Chicken</div>
+                <div><input type='checkbox'>Ham</div>
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs175</div>
+                <div>Rs340</div>
+                <div>Rs545</div>
+            </div>
+            <div class='addcart'>Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>REINE</div>
+            <div class='ingredients'> Mozzarella, Mushrooms</div>
+            <div class='meat'>
+                <div><input type='checkbox'>Chicken</div>
+                <div><input type='checkbox'>Ham</div>
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs175</div>
+                <div>Rs340</div>
+                <div>Rs545</div>
+            </div>
+            <div class='addcart'>Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>MARGHERITA</div>
+            <div class='ingredients'> Mozzarella, Tomato</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div> -->
+                <!-- <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs160</div>
+                <div>Rs310</div>
+                <div>Rs445</div>
+            </div>
+            <div class='addcart'> Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>VEGETARIAN</div>
+            <div class='ingredients'>Onions, Mushrooms, Mixed Vegetables, Mozzarella, Tomatoes, Olives, Greenpeppers, Pineapple</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div> -->
+                <!-- <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs175</div>
+                <div>Rs340</div>
+                <div>Rs520</div>
+            </div>
+            <div class='addcart'> Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>PIRATES SPECIAL</div>
+            <div class='ingredients'>Onions, Mushrooms, Chicken, Crab sticks, Maize, Mozzarella, Tomatoes, Olives, Greenpeppers</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div> -->
+                <!-- <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs205</div>
+                <div>Rs375</div>
+                <div>Rs585</div>
+            </div>
+            <div class='addcart'> Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>MAURITIAN PIZZA</div>
+            <div class='ingredients'>Salted Fish, Mozzarella, Chillies, Onions, Pineapple</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'></div> -->
+                <!-- <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs175</div>
+                <div>Rs340</div>
+                <div>Rs545</div>
+            </div>
+            <div class='addcart'> Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>CHEF PIZZA</div>
+            <div class='ingredients'>Thin dough, Fresh Tomato Sauce, Onions, Emmental, Fresh Mozzarella</div>
+            <div class='meat'>
+                <div><input type='checkbox'>Biltong</div>
+                <div><input type='checkbox'>Anchovies</div>
+                <div><input type='checkbox'>Shrimps</div>
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs235</div>
+                <div>Rs400</div>
+                <div>Rs630</div>
+            </div>
+            <div class='addcart'> Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>CHICKEN SHRIMP PIZZA</div>
+            <div class='ingredients'>Onions, Chicken, Shrimps, Mozzarella, Maize, Olives</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div>
+                <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs215</div>
+                <div>Rs385</div>
+                <div>Rs630</div>
+            </div>
+            <div class='addcart'>Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>BACON THIN</div>
+            <div class='ingredients'>Onions, Mushrooms, Bacon, Mozzarella, Olives, Capers</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div>
+                <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs190</div>
+                <div>Rs370</div>
+                <div>Rs575</div>
+            </div>
+            <div class='addcart'> Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>NAPOLITAINE</div>
+            <div class='ingredients'>Onions, Mushrooms, Bacon, Mozzarella, Olives, Capers</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div>
+                <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs185</div>
+                <div>Rs375</div>
+                <div>Rs600</div>
+            </div>
+            <div class='addcart'> Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>CHEESY PIZZA</div>
+            <div class='ingredients'>Onions, Mozzarella, Emmental, Cheddar, Fresh Cream</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div>
+                <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs185</div>
+                <div>Rs375</div>
+                <div>Rs600</div>
+            </div>
+            <div class='addcart'> Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>MEXICAN</div>
+            <div class='ingredients'> Beef Bolognese, Mozzarella, Green Chilli, Oregano</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div>
+                <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs200</div>
+                <div>Rs390</div>
+                <div>Rs640</div>
+            </div>
+            <div class='addcart'> Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>LARDONS PIZZA</div>
+            <div class='ingredients'>Onions, Mozzarella, Lardons, Oregano, Gherkins, Green Olives</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div> -->
+                <!-- <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs185</div>
+                <div>Rs345</div>
+                <div>Rs560</div>
+            </div>
+            <div class='addcart'>Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>SPECIAL MARLIN</div>
+            <div class='ingredients'>Onions, Mushrooms, Smoked Marlin, Mozzarella, Pineapple, Capers, Olives, Greenpeppers</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div> -->
+                <!-- <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs220</div>
+                <div>Rs400</div>
+                <div>Rs630</div>
+            </div>
+            <div class='addcart'> Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>SEAFOOD</div>
+            <div class='ingredients'>Onions, Mushrooms, Smoked Marlin, Crab Stick, Mozzarella, Shrimps, Tomatoes, Olives, Greenpeppers</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div> -->
+                <!-- <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs230</div>
+                <div>Rs430</div>
+                <div>Rs660</div>
+            </div>
+            <div class='addcart'>Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>DIAVOLA</div>
+            <div class='ingredients'>Mozzarella, Chorizo, Oregano</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div> -->
+                <!-- <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs175</div>
+                <div>Rs340</div>
+                <div>Rs545</div>
+            </div>
+            <div class='addcart'>Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>CHICKEN SAUSAGE & CHIPS</div>
+            <div class='ingredients'> Chicken Sausages, Mozzarella & Chips</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div> -->
+                <!-- <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs170</div>
+                <div>Rs310</div>
+                <div>Rs455</div>
+            </div>
+            <div class='addcart'>Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+<div class='all'>
+    <div class="item-bg">
+        <div> 
+            <div class='pizza-name'>PESTO MIEL</div>
+            <div class='ingredients'>Emmental, Feta, Pesto, Honey</div>
+            <div class='meat'>
+                <!-- <div><input type='checkbox'>Chicken</div> -->
+                <!-- <div><input type='checkbox'>Ham</div> -->
+                <!-- <div><input type='checkbox'>Tuna</div> -->
+            </div>
+        </div>
+        <div>
+            <div class='size'>
+                <div><input type='checkbox'>Mini </div>
+                <div><input type='checkbox'>Regular </div>
+                <div><input type='checkbox'>Family </div>
+            </div>
+            <div class='prices'>
+                <div>Rs170</div>
+                <div>Rs310</div>
+                <div>Rs600</div>
+            </div>
+            <div class='addcart'> Add to cart
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
