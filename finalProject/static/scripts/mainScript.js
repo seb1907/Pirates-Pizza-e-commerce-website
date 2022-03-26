@@ -197,14 +197,14 @@ for (var i = 0; i < elements.length; i++) {
 
 
 var swash1 = function() {
-    console.log('swash')
-    let y = document.getElementsByClassName('cart')
-    y.appendChild(box)
-    let x= localStorage.getItem('Pizza1')
-    box.appendChild(x)
     
-    //  x.appendChild(box)    
-}
+    let x = localStorage.getItem('Pizza1')
+    
+    let y = document.getElementById('cart')
+    let box = createElement()
+    let box1 = y.appendChild(box)
+    box1.innerText = x
+}   
 
 var cartElements = document.querySelectorAll(".addcart");
 for (var i = 0; i < elements.length; i++) {
@@ -212,12 +212,12 @@ for (var i = 0; i < elements.length; i++) {
   }
 }
 
-let box;
+
 function createElement() {
-    box = document.createElement('div');
+  let  box = document.createElement('div');
     box.setAttribute('class', 'item');
     // box.setAttribute('id', 'theCell');
-    
+    return box
 }
 
 
