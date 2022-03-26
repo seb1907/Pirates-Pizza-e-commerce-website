@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="static/styles/main.css">
+    <script src="static/scripts/mainScript.js" defer></script>
+  </head>
+  <body>
+    <div class="header1">
+      <div class="inner_header">
+        <div class="logo" id="logo_name">Pirates Pizza</div> 
+
+      </div>
+      <div class="inner_header"> 
+        <div class="login">sign up</div>
+        <div class="login" id="login_buton">login</div>
+
+      </div>
+    </div>
+    <div class="main">
+      <div class="menu">
+        <div class="categories">
+          <div id='pizzabtn' class="table" ><a href="{{ url_for('pizzas') }}">Pizzas</a></div>
+          <div id='pastabtn' class="table" ><a href="{{ url_for('pasta') }}">Pasta</a></div>
+          <div id='saladbtn' class="table"><a href="{{ url_for('salads') }}">Salads</a></div>
+          <div id='sidesbtn' class="table"><a href="{{ url_for('starters') }}">Starters</a></div>
+          <div id='drinkbtn' class="table">Drinks</div>
+          <div id='otherbtn' class="table"><a href="{{ url_for('others') }}">Others</a></div>
+        </div>
+        <div class="items">
+          {% block content %}
+          {% endblock %}
+
+        </div>
+      </div>
+      <div class="cart">
+        
+      </div>
+    </div>
+  </body>
+</html>
